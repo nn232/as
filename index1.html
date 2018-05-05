@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+   <script>
+       // class op{
+       //     //等价于PersonType构造器
+       //      constructor(name){
+       //          this.name=name;
+       //      }
+       //      say(){
+       //           console.log(this.name)
+       //      }
+       // }
+       // let op1=new op("小泉");
+       // op1.say()
+
+
+       class as{
+           constructor(c,k){
+              this.c=c;
+              this.k=k;
+           }
+           ad(){
+               return this.c*this.k;
+           }
+       }
+       class Square extends as{
+            constructor(z){
+                 super(z,z);
+            }
+       }
+       let square=new Square(4);
+      console.log(square.ad());
+      console.log(square instanceof Square)
+   </script>
+</html>
